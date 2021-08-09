@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <p>thghjkkkkkkk</p>
+        </div>
+        <div class="card">
+            <div class="input">
+                <div class="bill-container">
+                    <label for="bill-Amount">Bill</label>
+                    <div class="input-wrapper"> <span class="img-wrapper">$</span><input type="text" placeholder="0.00"
+                         maxlength="10"   id="bill-Amount" class="input-text"></div>
+                </div>
+                <div class="tip-container">
+                    <label>Select Tip%</label>
+                    <div class="btn-wrap">
+                        <button class="tip-btn">5%</button>
+                        <button class="tip-btn">10%</button>
+                        <button class="tip-btn btn-active">15%</button>
+                        <button class="tip-btn">25%</button>
+                        <button class="tip-btn">50%</button>
+                        <input type="text" placeholder="Custom" class="btn-custom">
+                    </div>
+                </div>
+                <div class="people-count">
+                    <div class="label-wrapper">
+                        <label for="person-count">Number Of People</label>
+                        <p class="error">Can't be zero</p>
+                    </div>
+                    <div class="input-wrapper">
+                        <span class="img-wrapper">$</span> <input type="text" class="input-text" placeholder="1"
+                            id="person-count">
+                    </div>
+                </div>
+            </div>
+            <div class="output">
+                <div class="result-wrapper">
+                    <div class="outline-wrapper">
+                        <div class="title-wrapper">
+                            <p>Tip Amount</p>
+                            <small>/Person</small>
+                        </div>
+                        <div class="amount">
+                            <span id="sign-1">$</span> <span class="amount-value  results" id="tipPerPerson">0.00</span>
+                        </div>
+                    </div>
+                    <div class="outline-wrapper">
+                        <div class="title-wrapper">
+                            <p>Total</p>
+                            <small>/Person</small>
+                        </div>
+                        <div class="amount">
+                            <span id="sign-2">$</span> <span class="amount-value  results" id="totalPerPerson">
+                                0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn-reset">Reset</button>
+                </div>
+            </div>
+
+
+        </div>
+        <script src="app.js"></script>
+</body>
+
+</html>

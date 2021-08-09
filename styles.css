@@ -1,0 +1,323 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.logo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: aliceblue;
+    width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+
+}
+
+.bill-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.inpuct-wrapper {
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.img-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+}
+
+.input-text {
+    border: none;
+    text-align: right;
+    border-radius: 0.5rem;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 92%;
+    background-color: rgb(199, 223, 231);
+    border: 3px solid transparent;
+    color: rgb(92, 189, 221);
+    font-weight: 700;
+}
+
+.input-text:focus {
+    outline: none;
+    border: 3px solid rgb(119, 212, 243);
+}
+
+.label-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    color: gray;
+    margin-left: 1rem;
+}
+
+.btn-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.btn-wrap button,
+.btn-wrap .btn-custom {
+    width: 44%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 3px solid transparent;
+    text-align: center;
+    color: rgb(197, 226, 236);
+    font-weight: 700;
+    background-color: rgb(25, 121, 153);
+}
+
+.btn-wrap .btn-custom:focus {
+    color: rgb(74, 159, 187);
+    border: 3px solid rgb(119, 212, 243);
+}
+
+.btn-wrap button:hover {
+    background-color: rgb(197, 226, 236);
+    font-weight: 700;
+    color: rgb(92, 189, 221);
+}
+
+.btn-wrap .btn-custom {
+    background-color: rgb(199, 223, 231);
+    color: rgb(92, 189, 221);
+    font-weight: 700;
+}
+
+.btn-wrap .btn-custom:focus {
+    outline: none;
+}
+
+.btn-wrap button:focus,
+.btn-wrap .btn-active {
+    background-color: rgb(99, 193, 224);
+    color: rgb(25, 121, 153);
+}
+
+.error {
+    color: red;
+    font-weight: 650;
+    font-size: 1rem;
+    text-align: center;
+    padding-right: 0.3rem;
+    opacity: 0;
+}
+
+.showErrorMsg {
+    opacity: 1;
+}
+
+
+.output {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(25, 121, 153);
+    padding: 1rem;
+    flex-direction: column;
+    margin: 0.25rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.output .title-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem;
+    color: rgb(197, 226, 236);
+    font-weight: 700;
+}
+
+.output .outline-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    flex-direction: row;
+}
+
+.outline-wrapper .amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outline-wrapper .amount span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(99, 193, 224);
+    font-weight: 700;
+
+}
+
+.btn-wrapper {
+    width: 90%;
+    margin-bottom: 0.25rem;
+}
+
+.btn-wrapper button {
+    font-size: 1rem;
+    padding: 0.4rem;
+    width: 100%;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: rgb(99, 193, 224);
+    color: rgb(25, 121, 153);
+    font-weight: 700;
+}
+
+.btgn-reset {
+
+    background-color: rgb(92, 189, 221);
+}
+
+
+.result-wrapper {
+    width: 100%;
+
+}
+
+@media only screen and (min-width:1020px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 65%;
+        align-items: stretch;
+        padding: 1rem 0.75rem;
+        border-radius: 2rem;
+        gap: 1rem;
+
+    }
+
+    .input {
+        padding: 1rem 0;
+        gap: 2rem;
+    }
+
+    label {
+        font-size: 1.6rem;
+        margin-left: 0.5rem;
+    }
+
+    .input-text {
+        width: 95%;
+    }
+
+    .btn-wrap button,
+    .btn-wrap .btn-custom {
+        width: 45%;
+        font-size: 1.3rem;
+    }
+
+    .output {
+        width: 100%;
+        border-radius: 2rem;
+        padding: 2rem 1rem;
+        margin: 0.5rem;
+        margin-left: 0;
+        justify-content: space-between;
+    }
+
+    .output .btn-reset {
+        border-radius: 1rem;
+        padding: 0.75rem;
+        font-size: 1.5rem;
+    }
+
+    .title-wrapper {
+        font-size: 1.4rem;
+        margin: 0.75rem;
+    }
+
+    #totalPerPerson,
+    #tipPerPerson {
+        font-size: 1.75rem;
+    }
+
+    .btn-wrapper {
+        padding: 1.75rem 0;
+    }
+
+    .input-text {
+        font-size: 1.5rem;
+    }
+
+    .error {
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    #sign-1 {
+        font-size: 2rem;
+    }
+
+    #sign-2 {
+        font-size: 2rem;
+    }
+
+    .result-wrapper {
+        margin-top: 2rem;
+    }
+
+}
